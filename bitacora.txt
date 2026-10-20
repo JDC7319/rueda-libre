@@ -1,0 +1,12 @@
+URL Completa: http://127.0.0.1:5500/rueda-libre/index.html
+Protocol: http
+Host: 127.0.0.1
+Port: 5500
+Route: /rueda-libre/index.html
+Request Method: GET
+Status Code: 304 Not Modified
+
+Rol que cumplirán HTML, CSS y JavaScript
+HTML: Es la estructura básica y el contenido del sitio por ejemplo para crear la seccion de bienvenida de la pagina
+CSS: Es el diseño visual, el estilo y la estetica. Por ejemplo para darle un estilo llamativo a los botones para logearse.
+JavaScript: Es la interactividad y el comportamiento dinamico. Por ej hacer que cuando alguien haga clic en el boton de comprar, aparezca un mensaje de confirmacion en la pantalla sin recargar la pagina.
