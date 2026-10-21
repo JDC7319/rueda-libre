@@ -11,7 +11,7 @@ HTML: Es la estructura básica y el contenido del sitio por ejemplo para crear l
 CSS: Es el diseño visual, el estilo y la estetica. Por ejemplo para darle un estilo llamativo a los botones para logearse.
 JavaScript: Es la interactividad y el comportamiento dinamico. Por ej hacer que cuando alguien haga clic en el boton de comprar, aparezca un mensaje de confirmacion en la pantalla sin recargar la pagina.
 
-Matriz Rutas del Proyecto
+Matriz Rutas del Proyecto +
 
 Archivo de Origen → Destino → Ruta Escrita
 • index.html → tarifas.html → paginas/tarifas.html
