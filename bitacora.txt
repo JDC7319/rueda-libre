@@ -150,3 +150,12 @@ Reservas***********************************************************************
  │    p: "© 2026 Rueda Libre. Todos los derechos reservados."                 │
  └────────────────────────────────────────────────────────────────────────────┘
 ================================================================================
+Justificacion Paso 3 MiniReto 6 Fecha 10/21/2026
+Botones de Opcion - Tipo de Bicicleta
+ <input type="radio"> Este tipo metodo lo escogi ya que utiliza cuando hay pocas opciones para elegir y el usuario debe y solo puede elegir una de las opciones.
+
+Menu desplegable - Plan de Alquiler
+<select> y <option> En este caso aunque tambien tenemos 3 opciones como con los tipos de bicicleta, tenemos opciones con textos mas largos y descriptivos. se habria usado mucho espacio vertical en pantalla estorbando el diseno en caso de haber usado los botones de opciones
+
+Checkbox
+<input type="checkbox"> Lo utilizamos para que el cliente decida si acepta los terminos, siendo si lo seleccion SI y no seleccionarlo seria un NO
