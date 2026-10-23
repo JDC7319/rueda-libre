@@ -226,3 +226,80 @@ Resultado esperado: El campo debe exigir un valor mínimo de 1, impidiendo que l
 
 Resultado obtenido: El navegador rechaza el valor ingresado y muestra una alerta solicitando una cantidad igual o superior a 1.
 
+miniReto8 10-22-2026
+Ajuste el tamano del logo y corrobore que las imagenes importantes tuvieran alt
+++++++++++++++++++++
+
+Color
+
+Código
+
+Uso que propone el cliente
+
+Verde Ruta
+
+#1E7A4F
+
+Naranja Pedal
+
+#F39A2B
+
+
+Azul Noche
+
+#14213D
+
+
+Crema
+
+#FAF6EF
+
+
+Gris Asfalto
+
+#5B6470
+++++++++++++++++++++
+texto blanco sobre Verde Ruta, *Apta* 5.31:1
+    texto normal, WCAG AA:Pass
+    texto grande WCAG AA:Pass
+
+blanco sobre Naranja Pedal, *No Apta* 2.21:1
+    texto normal, WCAG AA:Fail
+    texto grande WCAG AA:Fail
+    
+
+Azul Noche sobre Naranja Pedal, *Apta* 7.2:1
+    texto normal,  WCAG AAA:Pass
+    texto grande  WCAG AAA:Pass
+    
+
+Azul Noche sobre Crema, *Apta* 14.82:1
+    texto normal, WCAG AAA:Pass
+    texto grande WCAG AAA:Pass
+    
+
+Gris Asfalto sobre Crema, *Apta* 5.56:1
+    texto normal, WCAG AA:Pass
+    texto grande WCAG AAA:Pass
+
+
+Verde Ruta sobre Crema, *Apta* 4.93:1
+    texto normal, WCAG AA:Pass
+    texto grande WCAG AAA:Pass
+
+
+Naranja Pedal sobre Crema *No Apta* 2.05:1
+    texto normal, WCAG AA:Fail
+    texto grande WCAG AA:Fail
+
+
+ y blanco sobre Azul Noche. *Apta* 15.97:1
+ texto normal, WCAG AAA:Pass
+ texto grande WCAG AAA:Pass
+
+texto= blanco	
+texto-secundario = #FAF6EF
+fondo=  #14213D
+botones y enlaces = #F39A2B
+destacados y botones secundarios =	#FAF6EF   
+Títulos y encabezado = #F39A2B
