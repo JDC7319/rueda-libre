@@ -1,0 +1,22 @@
+:root {
+    --color-principal: #14213D;
+    --texto-principal: #FFFFFF; 
+    --texto-secundario: #5B6470;
+    
+    --botones-enlaces-titulos-encabezados: #F39A2B ; 
+    --destacados-sbotones: #1E7A4F;
+
+    --fuente-principal: 'Montserrat', Arial, sans-serif;
+    --fuente-secundaria: 'Open Sans', Arial, sans-serif;
+
+    --espacio: 3rem;
+    
+}
+
+body{
+    background-color: blue;
+}
+
+h1,h2,h3{
+    font-family: var(--fuente-principal);
+}

@@ -302,9 +302,9 @@ Naranja Pedal sobre Crema *No Apta* 2.05:1
  texto normal, WCAG AAA:Pass
  texto grande WCAG AAA:Pass
 
-texto= blanco	
-texto-secundario = #FAF6EF
+texto= 	#FAF6EF   
+texto-secundario = #5B6470
 fondo=  #14213D
 botones y enlaces = #F39A2B
-destacados y botones secundarios =	#FAF6EF   
+destacados y botones secundarios =	#1E7A4F
 Títulos y encabezado = #F39A2B
