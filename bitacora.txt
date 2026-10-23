@@ -159,3 +159,70 @@ Menu desplegable - Plan de Alquiler
 
 Checkbox
 <input type="checkbox"> Lo utilizamos para que el cliente decida si acepta los terminos, siendo si lo seleccion SI y no seleccionarlo seria un NO
+
+miniReto Dia 2 10-22-2026
+
+Prueba 1: Campo "Nombre completo"
+
+Dato de prueba: Intento de envío dejando la celda vacía, o ingresando un nombre con números y símbolos (ejemplo: Juan123#).
+
+Resultado esperado: El campo debe ser obligatorio y utilizar una restricción que solo admita letras y espacios, excluyendo números y caracteres especiales.
+
+Resultado obtenido: El formulario detiene el envío indicando que el campo es obligatorio y rechaza los datos que contienen números o caracteres no permitidos.
+
+Prueba 2: Campo "Número de documento"
+
+Dato de prueba: Ingreso de texto con letras, o números con una longitud menor a 6 dígitos o mayor a 10 dígitos (ejemplo: 12345 o 12345678901).
+
+Resultado esperado: El sistema solo debe admitir caracteres numéricos y verificar que la cantidad de dígitos se encuentre estrictamente entre 6 y 10.
+
+Resultado obtenido: Se rechazan las letras o símbolos y el navegador muestra una advertencia de longitud cuando la cifra no cumple con el rango de 6 a 10 dígitos.
+
+Prueba 3: Campo "Correo electrónico"
+
+Dato de prueba: Ingreso de una dirección incompleta o sin el formato adecuado, omitiendo el arroba o la información antes/después del símbolo (ejemplo: usuario@ o usuario.com).
+
+Resultado esperado: El campo debe validar la estructura del correo electrónico, exigiendo texto antes del @, el símbolo @ y un dominio completo después de este.
+
+Resultado obtenido: El envío se bloquea y el navegador notifica al usuario que la dirección introducida carece de la estructura de correo requerida.
+
+Prueba 4: Campo "Teléfono"
+
+Dato de prueba: Ingreso de un número que no inicia con el dígito 3 o con una cantidad inferior a 10 dígitos (ejemplo: 2001234567 o 3001234).
+
+Resultado esperado: El formulario debe validar que el número telefónico comience obligatoriamente con el dígito 3 y contenga exactamente 10 números.
+
+Resultado obtenido: El sistema no permite enviar el formulario hasta que el número ingresado cumpla con el inicio en 3 y la longitud completa de 10 dígitos.
+
+Prueba 5: Campo "Fecha del alquiler"
+
+Dato de prueba: Intento de selección de una fecha no disponible o fuera del rango de fechas previamente autorizadas en el sistema.
+
+Resultado esperado: El selector del calendario debe limitar la interacción para que el usuario solo pueda elegir días dentro del rango habilitado.
+
+Resultado obtenido: El campo restringe las opciones y solo permite seleccionar las fechas autorizadas dentro del calendario.
+
+Prueba 6: Campo "Tipo de bicicleta"
+
+Dato de prueba: Intento de envío del formulario sin seleccionar ninguna de las opciones de tipo de bicicleta (radio).
+
+Resultado esperado: Al tratarse de una selección obligatoria, el sistema debe exigir la elección de al menos una alternativa (Urbana, Montaña o Eléctrica).
+
+Resultado obtenido: El navegador bloquea la acción indicando que se debe marcar una de las opciones para continuar.
+
+Prueba 7: Campo "Plan de alquiler"
+
+Dato de prueba: Intento de envío manteniendo el menú desplegable (select) en estado por defecto o sin elegir un plan válido de la lista.
+
+Resultado esperado: El formulario debe requerir la selección explícita de un plan de duración de la lista (1 hora, medio día o día completo).
+
+Resultado obtenido: Se detiene el formulario hasta que el usuario activa el listado y selecciona una de las opciones disponibles.
+
+Prueba 8: Campo "Cantidad de bicicletas"
+
+Dato de prueba: Ingreso del valor 0 o números negativos dentro del campo numérico.
+
+Resultado esperado: El campo debe exigir un valor mínimo de 1, impidiendo que la reserva continúe con cantidades nulas o negativas.
+
+Resultado obtenido: El navegador rechaza el valor ingresado y muestra una alerta solicitando una cantidad igual o superior a 1.
+

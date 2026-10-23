@@ -36,22 +36,22 @@
 
         <section id="form-reservas">
             <h2>Reservas</h2>
-            <form action="/enviar-datos" method="post">
+            <form action="#" method="post">
                 <!-- Grupo 1 / Fieldset1 -->
                 <fieldset>
                     <legend>Tus datos</legend>
                     <div>
                         <label for="name">Nombre Completo:</label>
-                        <input type="text" id="name" name="name" />
+                        <input type="text" id="name" name="name" minlength="3" pattern="[A-Za-zÁ-Úá-úñÑ\s]+"  />
 
                         <label for="id">Numero de Documento:</label>
-                        <input type="text" id="id" name="id" />
+                        <input type="text" id="id" name="id " minlength="6" maxlength="10" pattern="[0-9]+"  required />
                         <br />
                         <label for="email">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" />
+                        <input type="email" id="email" name="email" required />
 
                         <label for="telefono">Teléfono:</label>
-                        <input type="tel" id="telefono" name="telefono" />
+                        <input type="tel" id="telefono" name="telefono" maxlength="10" pattern="3[0-9]{9}" required/>
                     </div>
 
                     <!-- Grupo 1 / Fieldset1 -->
@@ -64,29 +64,26 @@
                 <fieldset>
                     <legend>Tu Alquiler</legend>
                     <div><label for="date">Fecha del alquiler</label>
-                        <input type="date" id="date" name="date">
+                        <input type="date" id="date" name="date" min="2026-10-22" max="2026-11-19" required>
                     </div>
 
                     <!-- Urbana/Mountain/Electric 1 of the 3 -->
-                    <div><label for="tipoBici">Tipo de bicicleta:</label>
-
-                        <label for="bici-urbana">Urbana
-                            <input type="radio" id="bici-urbana" name="tipoBici">
+                    <div>
+                        <p>Tipo de bicicleta:</p>
+                        <label for="bici-urbana">
+                        <input type="radio" id="bici-urbana" name="tipoBici" required> Urbana
                         </label>
-                        
-                        <label for="bici-montana">Montaña
-                            <input type="radio" id="bici-montana" name="tipoBici">
+                        <label for="bici-montana">
+                        <input type="radio" id="bici-montana" name="tipoBici" required> Montaña
                         </label>
-                        
-                        <label for="bici-electrica">Eléctrica
-                            <input type="radio" id="bici-electrica" name="tipoBici">
+                        <label for="bici-electrica">
+                        <input type="radio" id="bici-electrica" name="tipoBici" required> Eléctrica
                         </label>
-                        
                     </div>
                     <!-- Plan Alquiler /  -->
                     <div>
                         <label for="plan-alquiler">Plan de Alquiler</label>
-                        <select name="planAlquiler" id="plan-alquiler">
+                        <select name="planAlquiler" id="plan-alquiler" required>
                             <option value="">-- Selecciona un plan --</option>
                             <option value="1hora">1 hora</option>
                             <option value="medio-dia">Medio día (4h)</option>
@@ -96,12 +93,12 @@
                     <!-- Cantidad de bicicletas -->
                     <div>
                         <label for="cantidad-bicicletas">Cantidad de bicicletas</label>
-                        <input type="number" id="cantidad-bicicletas" name="cantidadBicicletas">
+                        <input type="number" id="cantidad-bicicletas" name="cantidadBicicletas" min="1" max="6" required>
                     </div>
                     <!-- Recorrido -->
                     <div>
                         <label for="recorrido">Recorrido</label>
-                        <select name="recorrido" id="recorrido">
+                        <select name="recorrido" id="recorrido" required>
                             <option value="">-- Selecciona un recorrido --</option>
                             <option value="ruta-1">Río y Parques</option>
                             <option value="ruta-2">Sabores de Barrio</option>
@@ -117,7 +114,7 @@
                     <legend>Confirmación</legend>
                     <div>
                         <label for="comentarios">Comentarios:</label>
-                        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe cualquier comentario o solicitud especial aquí..."></textarea>
+                        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe cualquier comentario o solicitud especial aquí..." maxlength="300"></textarea>
                     </div>
 
                     <div>
