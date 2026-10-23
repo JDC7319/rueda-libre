@@ -9,12 +9,17 @@
     --fuente-principal: 'Montserrat', Arial, sans-serif;
     --fuente-secundaria: 'Open Sans', Arial, sans-serif;
 
-    --espacio: 3rem;
+    --espacio-pequeno: 0.5rem;
+    --espacio-mediano: 1rem;
+    --espacio-grande: 2rem;
     
 }
 
 body{
-    background-color: blue;
+    font-family: var(--fuente-secundaria);
+    color: var(--texto-principal);
+    background-color:var(--color-principal); ;
+    
 }
 
 h1,h2,h3{
