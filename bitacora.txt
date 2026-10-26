@@ -322,3 +322,9 @@ Especificidad: (1, 1, 1) (1 ID, 1 Clase, 1 Elemento)
 Causa del problema: El selector inicial no contaba con la clase de estado en su definición, lo que provocaba que las reglas base heredadas o los selectores generales de la estructura tuvieran mayor o igual peso, impidiendo que el estilo de la página actual se renderizara correctamente. 
 
 Asi estaria corregido sin usar !important ni estilos en Lineamientos
+
+Pruebas utilizando tanto el border-box como el content-box que se utilizaria por defecto.
+
+Estado 1 (content-box por defecto): Ancho total medido en DevTools: 332px Aca el ancho base de la tarjeta suma los 32px de padding horizontal y los bordes, desbordando el espacio .
+
+Estado 2 (border-box aplicado): Ancho total medido en DevTools: 300px Aca al aplicar box-sizing: border-box, el relleno y los bordes se incluyen dentro del ancho total de la tarjeta, esto nos facilita un control preciso del diseño responsivo y asi nos ahorramos dolores de cabeza revisando si nuestros elementos cumplen las medidas requeridas. :D
