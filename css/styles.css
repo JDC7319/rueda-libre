@@ -1,10 +1,12 @@
 :root {
     --color-principal: #14213D;
-    --texto-principal: #FFFFFF; 
-    --texto-secundario: #5B6470;
+    
+    --color-secundario: #ffffff; 
+    --color-texto: #FAF6EF;
     
     --botones-enlaces-titulos-encabezados: #F39A2B ; 
-    --destacados-sbotones: #1E7A4F;
+
+    
 
     --fuente-principal: 'Montserrat', Arial, sans-serif;
     --fuente-secundaria: 'Open Sans', Arial, sans-serif;
@@ -15,13 +17,79 @@
     
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body{
+    margin: 0;
     font-family: var(--fuente-secundaria);
-    color: var(--texto-principal);
+    color: var(--color-texto);
     background-color:var(--color-principal); ;
+    line-height:1.6;
     
+}
+
+header{
+    padding: var(--espacio-mediano);
+}
+
+header a{
+    color: var(--color-secundario);
 }
 
 h1,h2,h3{
     font-family: var(--fuente-principal);
+}
+
+#menu a{
+    text-decoration: none;
+}
+
+#menu a.active { color: var(--botones-enlaces-titulos-encabezados); font-weight: 600; }
+
+#menu a:hover{
+    color: var(--botones-enlaces-titulos-encabezados);
+    text-decoration: underline;
+}
+
+#menu a:focus{
+    outline: 2px solid var(--botones-enlaces-titulos-encabezados);
+    background-color: var(--color-principal);
+
+}
+
+.btn-cta{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--botones-enlaces-titulos-encabezados); 
+    color: var(--color-principal); 
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 4px;
+    
+}
+
+.btn-cta:hover{
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+
+.btn-cta:focus{
+    outline: 2px solid var(--botones-enlaces-titulos-encabezados);
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+}   
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+
+    border-color: var(--botones-enlaces-titulos-encabezados);
+
+}
+
+
+input[type="radio"]:focus{
+    outline: 2px solid var(--botones-enlaces-titulos-encabezados);
+    accent-color:var (--botones-enlaces-titulos-encabezados);
 }
