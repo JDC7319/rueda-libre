@@ -328,3 +328,61 @@ Pruebas utilizando tanto el border-box como el content-box que se utilizaria por
 Estado 1 (content-box por defecto): Ancho total medido en DevTools: 332px Aca el ancho base de la tarjeta suma los 32px de padding horizontal y los bordes, desbordando el espacio .
 
 Estado 2 (border-box aplicado): Ancho total medido en DevTools: 300px Aca al aplicar box-sizing: border-box, el relleno y los bordes se incluyen dentro del ancho total de la tarjeta, esto nos facilita un control preciso del diseño responsivo y asi nos ahorramos dolores de cabeza revisando si nuestros elementos cumplen las medidas requeridas. :D
+
+
+Bitácora de Todos los miniRetos: Rueda Libre
+Dia 1 Fundamentos y Estructura HTML
+1. Kilómetro 0: el repositorio y la página base
+
+Explicación: Configuración inicial del entorno de trabajo local, creación del repositorio y desarrollo del documento HTML base comprobando cómo se solicita y recibe la página en DevTools.
+
+2. La vitrina de Rueda Libre
+
+Explicación: Estructuración del contenido de la página de inicio utilizando una jerarquía correcta de encabezados, párrafos, listas, imágenes y enlaces.
+
+3. Tarifas claras: tablas y rutas relativas
+
+Explicación: Presentación de datos tabulares mediante tablas accesibles y conexión de páginas ubicadas en carpetas distintas utilizando rutas relativas correctas.
+
+4. Rueda Libre v0.1: un sitio navegable
+
+Explicación: Integración de las páginas en un sitio web cohesionado con un menú de navegación común, un bloque final (footer) y una página de reservas inicial.
+
+Dia 2 Semántica, Formularios y Accesibilidad
+5. Estructura con significado
+
+ Reestructuración de las páginas incorporando etiquetas semánticas de HTML5 (<main>, <section>, <article>, etc.) para mejorar el significado y la accesibilidad del código.
+
+6. El formulario de reservas
+
+ Construcción de un formulario completo y bien organizado, seleccionando los controles e inputs más adecuados para cada tipo de dato solicitado al usuario.
+
+7. Reservas sin errores: validación y teclado
+
+ Aplicación de validación nativa basada en reglas de negocio y garantía de que el formulario sea totalmente usable mediante la navegación por teclado.
+
+8. Rueda Libre v0.2 en línea: accesible y publicada
+
+Auditoría y corrección de la accesibilidad del sitio, validación del contraste de color de la marca y publicación oficial en GitHub Pages.
+
+Dia 3: Estilos CSS y Lanzamiento
+9. La identidad de Rueda Libre
+
+ Creación y vinculación de una hoja de estilos externa utilizando variables CSS, tipografías de Google Fonts y colores de marca aplicados mediante herencia.
+
+10. Navegación con estados y sin conflictos
+
+Estilizado avanzado de la navegación, enlaces, botones y campos usando selectores de clase, descendientes y pseudoclases, resolviendo conflictos de cascada y especificidad.
+
+11. Todo en su lugar: modelo de caja
+
+ Control preciso del tamaño y espaciado de los elementos aplicando el modelo de caja (box model), la propiedad box-sizing y unidades relativas.
+
+12. Rueda Libre v1.0: lanzamiento
+
+ Aplicación de posicionamiento avanzado en los últimos componentes, consolidación del diseño visual en todas las páginas y publicación definitiva de la versión 1.0.
+
+ 
+ 
+ 
+Yo le mejoraria el diseno responsivo y posicionamiento,  hay de hecho herramientas como la implementación de cuadrículas (Grid), contenedores flexibles (Flexbox) y elementos flotantes con position. Podriamos profundizar en ellos posteriormente.
