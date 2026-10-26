@@ -202,7 +202,7 @@ Resultado esperado: El selector del calendario debe limitar la interacción para
 
 Resultado obtenido: El campo restringe las opciones y solo permite seleccionar las fechas autorizadas dentro del calendario.
 
-Prueba 6: Campo "Tipo de bicicleta"
+Prueba 6: Campo "Tipo de bicicleta".
 
 Dato de prueba: Intento de envío del formulario sin seleccionar ninguna de las opciones de tipo de bicicleta (radio).
 
