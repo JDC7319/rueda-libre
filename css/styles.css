@@ -26,8 +26,8 @@
 body{
     margin: 0;
     font-family: var(--fuente-secundaria);
-    color: var(--color-texto);
-    background-color:var(--color-principal); ;
+    color: var(--color-principal);
+    background-color:var(--color-texto); ;
     line-height:1.6;
     
 }
@@ -37,7 +37,7 @@ header{
 }
  /* Nav Var Links */
 header a{
-    color: var(--color-secundario);
+    color: var(--color-principal);
 }
 
 /*  Titulos */
@@ -49,6 +49,8 @@ h1,h2,h3{
 /* Menu */
 #menu a{
     text-decoration: none;
+    color: var(--color-secundario);
+    font-weight: 500;
 }
 
 #menu a.active { color: var(--botones-enlaces-titulos-encabezados); font-weight: 600; }
@@ -79,8 +81,8 @@ h1,h2,h3{
 
 /* Botones de llamada a la acción */
 .btn-cta:hover{
-    background-color: var(--color-secundario);
-    color: var(--color-principal);
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
 }
 
 .btn-cta:focus{
@@ -111,7 +113,8 @@ main{
 }
 /* Portada  */
 header {
-    
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
     display: flex;
     flex-direction: column;
     justify-content: top; 
@@ -121,6 +124,7 @@ header {
 }
 
 header .portada{
+    
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
@@ -153,17 +157,21 @@ header .portada{
     gap: var(--espacio-grande);
     border: 1px solid var(--botones-enlaces-titulos-encabezados);
     border-radius: 8px;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
 }
 
 #servicios article img {
     width: 100%;
     height: auto;
     margin-top: var(--espacio-mediano);
-    border-radius: 8px;
+    border-radius: 28px;
     padding: var(--espacio-mediano);
-
+    
     
 }
+
+
 
 /* Tablas */
 
@@ -196,12 +204,12 @@ tbody {
     color: var(--color-principal, #FAF6EF); 
     padding: var(--espacio-mediano);
     font-weight: 600;
-    border: 1px solid var(--color-borde, #5B6470);
+    border: 1px solid var(--color-borde);
 }
 
 td {
     padding: var(--espacio-pequeno) var(--espacio-mediano); 
-    border: 1px solid var(--color-borde, #5B6470); 
+    border: 1px solid var(--color-principal); 
 }
 
 
@@ -218,6 +226,8 @@ form {
 }
 
 fieldset {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
     display: flex;
     flex-direction: column;
     gap: var(--espacio-pequeno);
@@ -226,10 +236,20 @@ fieldset {
     padding: var(--espacio-mediano);
 }
 
+
+
 label {
     display: block; 
     font-weight: 600;
     margin-bottom: var(--espacio-pequeno);
+    
+}
+
+legend{
+    color: var(--color-principal);
+    background-color: var(--color-texto);
+    font-weight: 700;
+    border-radius: 10px;
 }
 
 input,
@@ -311,3 +331,31 @@ header nav ul,
     font-weight: bold;
     z-index: 1000;
 }
+
+.whatsapp-flotante:hover{
+    outline: 2px solid var(--botones-enlaces-titulos-encabezados);
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+}
+
+footer{
+    background-color: var(--color-principal);
+    font-weight: 500;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--color-secundario);
+}
+
+
+footer a.active:hover {
+    color: var(--botones-enlaces-titulos-encabezados);
+    text-decoration: underline;
+}
+
+footer a.active:focus {
+    outline: 2px solid var(--botones-enlaces-titulos-encabezados);
+    background-color: var(--color-principal);
+}
+
