@@ -390,9 +390,19 @@ Yo le mejoraria el diseno responsivo y posicionamiento,  hay de hecho herramient
 miniReto Dia 1 Semana 2 - 1
 Al estrechar la pagina, noto que en el header los elementos a saltan de linea por el flrtex wrap, la pagina se deja estrechar hasta que los elementos no tienen mas espacio por el cual mostrarse, en el caso del footer pasa lo mismo con sus elementos solo que en su caso no tienen necesidad del flex wrap si no que simplemente tiene un limite de espacio en pantalla (Computador, en caso de verse desde un celular si es alcanza a apreciar la superposicion)
 
-miniReto 2
+miniReto Dia 1 Semana 2 - 2
 Pruebas con diferentes resoluciones
 1280px: La pagina muestra un grid que contiene 3 Columnas
 900px: La pagina muestra un grid que contiene 2 Columnas
 500px: La pagina muestra un grid que contiene 1 Columna
+
+
+miniReto Dia 1 Semana 2 - 3
+Layout Flexbox vs Grid
+Portada (header.portada): En este caso use flexbox al no necesitarse de algun tipo de grid para organizar elementos en filas y columnas, es mucho mas simple y efectivo usar flexbox en este caso al funcionar bien en una dimension
+Galería (galeria-flex): Al igual que el anterior solo es necesario una dimension para mostrar los elementos de galeria
+Reservas (reservas-container): En este caso me parecio mas efectivo utilizar el grid-column-template para definir los 2 fr que ocupa el formulario y 1 fr que ocupa el horarios
+Fila del formulario (fila-campos): Aca se uso flexbox para organizar dos campos de datos similares (telefono y documento) en una sola fila, no es necesario usar las dos dimensiones del grid, 
+Encabezado (.barra-superior: Aca usamos Grid para estructurar el menú y el logo en una cuadrícula simétrica de dos columnas. 
+Pie de página: No se ha requerido- Se ira revisando >:)
 

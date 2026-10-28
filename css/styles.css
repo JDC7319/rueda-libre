@@ -36,15 +36,15 @@ header.portada{
     min-height: 20dvh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribuye la barra arriba y el título abajo */
+    justify-content: space-between; 
     padding: var(--espacio-grande) var(--espacio-mediano);
 }
 
-/* Barra superior que contiene el logo y el menú en los extremos */
+
 .barra-superior {
     width: 100%;
-    display: flex;
-    justify-content: space-between; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;        
 }
 
@@ -97,8 +97,12 @@ h1,h2,h3{
 
 #menu a.active { 
     color: var(--botones-enlaces-titulos-encabezados); 
+    border-bottom-color: var(--botones-enlaces-titulos-encabezados);
+    text-decoration: underline;
     font-weight: 600; 
 }
+
+
 
 /* Menu Pseudoclases */
 #menu a:hover{
@@ -178,7 +182,35 @@ h1,h2,h3{
     color: var(--color-secundario);
 }
 
+/* Galeria Nuestras Rutas */
+.galeria-flex{
+    display: flex;
+    gap: var(--espacio-mediano);
+}
 
+.galeria-flex .tarjeta-destacada{
+    padding: var(--espacio-mediano);
+    border: 1px solid var(--color-principal);
+    border-radius: 8px;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.galeria-container {
+    margin-top: var(--espacio-mediano);
+    padding-inline: var(--espacio-mediano);
+}
+.galeria-container h2 {
+    text-align: center;
+    margin: var(--espacio-grande);
+}
+
+.galeria-container img {
+    width: 100%;
+}
 
 
 /* Inputs Pseudoclases*/
@@ -271,6 +303,21 @@ form {
     padding: var(--espacio-mediano);
 }
 
+
+.fila-campos {
+    display: flex;
+    gap: var(--espacio-mediano);
+    width: 100%;
+    max-width: 500px; 
+}
+
+.grupo-campos {
+    flex: 1;
+    display: flex;
+    
+}
+
+
 fieldset {
     background-color: var(--color-principal);
     color: var(--color-secundario);
@@ -331,6 +378,25 @@ button:focus{
     background-color: var(--color-principal);
     color: var(--color-secundario);
 }
+
+.reservas-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--espacio-mediano);
+}
+
+.form-container {
+    grid-column: span 2;
+    display: flex;
+}
+
+.contact-info {
+    grid-column: span 1;
+}
+
+
+
+
 
 /* Menu de Navegación */
 header nav ul, 
