@@ -386,3 +386,7 @@ Estilizado avanzado de la navegación, enlaces, botones y campos usando selector
  
  
 Yo le mejoraria el diseno responsivo y posicionamiento,  hay de hecho herramientas como la implementación de cuadrículas (Grid), contenedores flexibles (Flexbox) y elementos flotantes con position. Podriamos profundizar en ellos posteriormente.
+
+miniReto Dia 1 Semana 2 - 1
+Al estrechar la pagina, noto que en el header los elementos a saltan de linea por el flrtex wrap, la pagina se deja estrechar hasta que los elementos no tienen mas espacio por el cual mostrarse, en el caso del footer pasa lo mismo con sus elementos solo que en su caso no tienen necesidad del flex wrap si no que simplemente tiene un limite de espacio en pantalla (Computador, en caso de verse desde un celular si es alcanza a apreciar la superposicion)
+

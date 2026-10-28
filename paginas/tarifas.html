@@ -19,10 +19,11 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
-        <h1 id="tarifas">Tarifas de Alquiler de Bicicletas en Medellín</h1>
+    <header class="portada">
+        <div class="barra-superior">
+            <h1 id="tarifas">Tarifas de Alquiler de Bicicletas en Medellín</h1>
         <nav>
-        <ul id="menu">
+            <ul id="menu">
             <li><a href="../index.html" >Inicio</a></li>
             <li><a href="../#quienes-somos">Quienes Somos</a></li>
             <li><a href="../#servicios"> Nuestros Servicios</a></li>
@@ -30,8 +31,10 @@
             <li><a href="./tarifas.html" class="active">Tarifas y Rutas</a></li>
             <li><a href="./reservas.html">Reservas</a></li>
             <li><a href="../#encuentranos">Encuéntranos</a></li>
-        </ul>
-    </nav>
+            </ul>
+        
+        </nav>
+        </div>
     
     </header>
     <main>
@@ -113,12 +116,30 @@
             
     </main>
     <footer>
-        <p>Todas las tarifas incluyen casco y candado. Los recorridos salen sábados y domingos a las 7:00 a. m. Qué llevar: ropa cómoda, agua, protector solar y documento de identidad.</p>
-        <img src="../img/bicicleta-logo.png" alt="Logo bicicleta" width="100" height="100">
-        <nav>
-        <a href="../index.html">Volver al Inicio</a>
-        </nav>
-        <a href="mailto:juanxxcastaneda71@gmail.com">Enviar correo</a>
+        <div class="footer-container">
+            <div class="footer-bloque">
+                <h3>Rueda Libre</h3>
+
+            </div>
+
+            <div class="footer-bloque">
+                <h3>Contacto</h3>
+                <a href="mailto:juanxxcastaneda71@gmail.com" class="active">Enviar correo</a>
+                <a href="../index.tml" class="active">Volver al Inicio</a>
+            </div>
+            <div class="footer-bloque">
+                <aside>
+                <h3>Horario de Atención</h3>
+                <dl>
+                <dt>Lunes a Viernes:</dt>
+                <dd>7:00 a. m. a 7:00 p. m</dd>
+
+                <dt>Sabados, Domingos y Festivos</dt>
+                <dd>6:00 a. m. a 2:00 p. m.</dd>
+                </dl>
+
+            </div>
+        </div>
         <p>© 2026 Rueda Libre. Todos los derechos reservados.</p>
     </footer>
     

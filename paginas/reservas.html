@@ -4,14 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reservas</title>
+    <title>Reservas - Rueda Libre</title>
 
-    <!-- Montserrat Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <!-- Open Sans Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -20,70 +14,68 @@
 </head>
 
 <body>
-    <header>
-        <h1>Reserva tu bicicleta</h1>
-        <nav>
-            <ul id="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../#quienes-somos">Quienes Somos</a></li>
-                <li><a href="../#servicios"> Nuestros Servicios</a></li>
-                <li><a href="../#como-alquilar">¿Cómo alquilar?</a></li>
-                <li><a href="./tarifas.html">Tarifas y Rutas</a></li>
-                <li><a href="./reservas.html" class="active">Reservar Ahora</a></li>
-                <li><a href="../#encuentranos">Encuéntranos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main id="reservas">
-        
+    <header class="portada">
+        <div class="barra-superior">
+            <a href="../index.html" class="logo">
+                <img src="../img/logo.avif" alt="Logo"> Rueda Libre
+            </a>
 
+            <nav class="menu-navegacion">
+                <ul id="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../#quienes-somos">Quienes Somos</a></li>
+                    <li><a href="../#servicios">Nuestros Servicios</a></li>
+                    <li><a href="../#como-alquilar">¿Cómo alquilar?</a></li>
+                    <li><a href="./tarifas.html">Tarifas y Rutas</a></li>
+                    <li><a href="./reservas.html" class="active">Reservar Ahora</a></li>
+                    <li><a href="../#encuentranos">Encuéntranos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="reservas">
+        <h1>Reserva tu bicicleta</h1>
         <section id="form-reservas">
             <h2>Reservas</h2>
             <form action="#" method="post">
-                <!-- Grupo 1 / Fieldset1 -->
                 <fieldset class="tarjetas-form">
                     <legend>Tus datos</legend>
                     <div>
                         <label for="name">Nombre Completo:</label>
-                        <input type="text" id="name" name="name" minlength="3" pattern="[A-Za-zÁ-Úá-úñÑ\s]+"  />
+                        <input type="text" id="name" name="name" minlength="3" pattern="[A-Za-zÁ-Úá-úñÑ\s]+" required />
 
                         <label for="id">Numero de Documento:</label>
-                        <input type="text" id="id" name="id " minlength="6" maxlength="10" pattern="[0-9]+"  required />
-                        <br />
-                        <label for="email">Correo Electrónico</label>
+                        <input type="text" id="id" name="id" minlength="6" maxlength="10" pattern="[0-9]+" required />
+
+                        <label for="email">Correo Electrónico:</label>
                         <input type="email" id="email" name="email" required />
 
                         <label for="telefono">Teléfono:</label>
-                        <input type="tel" id="telefono" name="telefono" maxlength="10" pattern="3[0-9]{9}" required/>
+                        <input type="tel" id="telefono" name="telefono" maxlength="10" pattern="3[0-9]{9}" required />
                     </div>
-
-                    <!-- Grupo 1 / Fieldset1 -->
                 </fieldset>
 
-
-
-
-                <!-- Grupo 2 / Fieldset2 -->
                 <fieldset>
                     <legend>Tu Alquiler</legend>
-                    <div><label for="date">Fecha del alquiler</label>
+                    <div>
+                        <label for="date">Fecha del alquiler</label>
                         <input type="date" id="date" name="date" min="2026-10-22" max="2026-11-19" required>
                     </div>
 
-                    <!-- Urbana/Mountain/Electric 1 of the 3 -->
                     <div>
                         <p>Tipo de bicicleta:</p>
                         <label for="bici-urbana">
-                        <input type="radio" id="bici-urbana" name="tipoBici" required> Urbana
+                            <input type="radio" id="bici-urbana" name="tipoBici" required> Urbana
                         </label>
                         <label for="bici-montana">
-                        <input type="radio" id="bici-montana" name="tipoBici" required> Montaña
+                            <input type="radio" id="bici-montana" name="tipoBici" required> Montaña
                         </label>
                         <label for="bici-electrica">
-                        <input type="radio" id="bici-electrica" name="tipoBici" required> Eléctrica
+                            <input type="radio" id="bici-electrica" name="tipoBici" required> Eléctrica
                         </label>
                     </div>
-                    <!-- Plan Alquiler /  -->
+
                     <div>
                         <label for="plan-alquiler">Plan de Alquiler</label>
                         <select name="planAlquiler" id="plan-alquiler" required>
@@ -93,12 +85,12 @@
                             <option value="dia-completo">Día Completo</option>
                         </select>
                     </div>
-                    <!-- Cantidad de bicicletas -->
+
                     <div>
                         <label for="cantidad-bicicletas">Cantidad de bicicletas</label>
                         <input type="number" id="cantidad-bicicletas" name="cantidadBicicletas" min="1" max="6" required>
                     </div>
-                    <!-- Recorrido -->
+
                     <div>
                         <label for="recorrido">Recorrido</label>
                         <select name="recorrido" id="recorrido" required>
@@ -108,11 +100,8 @@
                             <option value="ruta-3">Reto Las Palmas</option>
                         </select>
                     </div>
-                    
-                    
-
                 </fieldset>
-                <!-- Grupo 3 / Fieldset3 -->
+
                 <fieldset>
                     <legend>Confirmación</legend>
                     <div>
@@ -121,42 +110,49 @@
                     </div>
 
                     <div>
-                        <label for="terminos">Acepto los términos, condiciones y políticas de alquiler</label>
-                        <input type="checkbox" id="terminos"        name="terminos" required> 
+                        <label for="terminos">
+                            <input type="checkbox" id="terminos" name="terminos" required> Acepto los términos, condiciones y políticas de alquiler
+                        </label>
                     </div>
-
-                    
-
                 </fieldset>
 
                 <div class="confirmar-form">
                     <button type="submit">Enviar Reserva</button>
                 </div>
-                
             </form>
         </section>
-        <aside>
-            <h2>Horario de Atención</h2>
-            <dl>
-                <dt>Lunes a Viernes:</dt>
-                <dd>7:00 a. m. a 7:00 p. m</dd>
-
-                <dt>Sabados, Domingos y Festivos</dt>
-                <dd>6:00 a. m. a 2:00 p. m.</dd>
-            </dl>
-        </aside>
     </main>
-    <label for=""></label>
+
     <footer>
-        <nav>
-            <a href="../index.html">Volver al Inicio</a>
-        </nav>
-        <a href="mailto:juanxxcastaneda71@gmail.com">Enviar correo</a>
-        <p>© 2026 Rueda Libre. Todos los derechos reservados.</p>
+        <div class="footer-container">
+            <div class="footer-bloque">
+                <h3>Rueda Libre</h3>
+                <p>Alquiler de bicicletas en Medellín para recorrer la ciudad con seguridad, libertad y comodidad.</p>
+                <p>© 2026 Rueda Libre. Todos los derechos reservados.</p>
+            </div>
+
+            <div class="footer-bloque">
+                <h3>Contacto</h3>
+                <a href="mailto:juanxxcastaneda71@gmail.com">Email</a>
+                <p>Teléfono: +57 300 000 0000</p>
+                <p><a href="../index.html">Volver al Inicio</a></p>
+            </div>
+
+            <div class="footer-bloque">
+                <h3>Horario de Atención</h3>
+                <dl>
+                    <dt>Lunes a Viernes:</dt>
+                    <dd>7:00 a. m. a 7:00 p. m.</dd>
+
+                    <dt>Sábados, Domingos y Festivos:</dt>
+                    <dd>6:00 a. m. a 2:00 p. m.</dd>
+                </dl>
+            </div>
+        </div>
     </footer>
 
     <a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer" class="whatsapp-flotante">
-    WhatsApp
+        WhatsApp
     </a>
 </body>
 
