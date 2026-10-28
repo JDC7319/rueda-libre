@@ -133,6 +133,54 @@ h1,h2,h3{
     color: var(--color-secundario);
 }   
 
+/* Nuestra Flota */
+.flota-container {
+    margin-top: var(--espacio-grande);
+    padding-inline: var(--espacio-mediano);
+}
+
+.flota-container h2 {
+    text-align: center;
+    margin: var(--espacio-grande);
+}
+
+.flota-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--espacio-grande);
+}
+
+.flota-container .tarjeta-destacada {
+    padding: var(--espacio-mediano);
+    border: 1px solid var(--botones-enlaces-titulos-encabezados);
+    border-radius: 8px;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flota-container .tarjeta-destacada img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-block: var(--espacio-mediano);
+}
+
+.flota-container .tarjeta-destacada .btn-cta {
+    text-align: center;
+    margin-top: auto;
+}
+
+.flota-container .tarjeta-destacada .btn-cta:hover {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+}
+
+
+
+
 /* Inputs Pseudoclases*/
 input:focus, select:focus, textarea:focus {
     outline: none;
