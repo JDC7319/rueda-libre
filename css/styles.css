@@ -36,7 +36,7 @@ header.portada {
     padding: var(--espacio-mediano);
 }
 
-/* Barra superior que contiene el logo y el menú en los extremos */
+
 .barra-superior {
     width: 100%;
     display: flex;
@@ -103,6 +103,8 @@ header nav ul,
     border-bottom: 2px solid var(--botones-enlaces-titulos-encabezados); 
     border-radius: 2px;
 }
+
+
 
 /* Menu Pseudoclases */
 #menu a:hover {
@@ -288,6 +290,21 @@ form {
     margin: 0 auto;
     padding: var(--espacio-mediano);
 }
+
+
+.fila-campos {
+    display: flex;
+    gap: var(--espacio-mediano);
+    width: 100%;
+    max-width: 500px; 
+}
+
+.grupo-campos {
+    flex: 1;
+    display: flex;
+    
+}
+
 
 fieldset {
     background-color: var(--color-principal);

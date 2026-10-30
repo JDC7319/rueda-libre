@@ -390,18 +390,30 @@ Yo le mejoraria el diseno responsivo y posicionamiento,  hay de hecho herramient
 miniReto Dia 1 Semana 2 - 1
 Al estrechar la pagina, noto que en el header los elementos a saltan de linea por el flrtex wrap, la pagina se deja estrechar hasta que los elementos no tienen mas espacio por el cual mostrarse, en el caso del footer pasa lo mismo con sus elementos solo que en su caso no tienen necesidad del flex wrap si no que simplemente tiene un limite de espacio en pantalla (Computador, en caso de verse desde un celular si es alcanza a apreciar la superposicion)
 
-miniReto 2
+miniReto Dia 1 Semana 2 - 2
 Pruebas con diferentes resoluciones
 1280px: La pagina muestra un grid que contiene 3 Columnas
 900px: La pagina muestra un grid que contiene 2 Columnas
 500px: La pagina muestra un grid que contiene 1 Columna
 
+<<<<<<< HEAD
 minireto 4 Dia 1 Semana 2
 Primeramente aca termine estancado despues de hacer los estilos mobile first y despues volver a los estilos que venia usando desde el inicio para aplicarlos desde el tamaño de tablet en adelante, la primera falla fue volviendo a poner el header como estaba, para solucionar esto simplemente use flex ya que me parece mas facil que usar grid por lo menos para el header, me asegure de pocisionarme en la clase que habia creado antes para el header (portada),
 
 Luego tuve una falla con las columnas de las tarjetas en flotas y servicios, y con el desplazamiento de las tablas, aca tuve que recurrir a gemini para revisar como los podria ajustar, para el caso de las columnas utilize un repeat usando autofit para ajustarse automaticamente al tamaño de la pantallaa, suele verse con 1 columna en mobiles y 2 para tablet y 3 o mas en escritorio, para el caso de las tables aprendi a usar el overflow-x: auto; usandolo en las tablas estan son mas legibles desde el movil
 
 Adaptado a movil, tablet y pc, 360 px, 768 px y 1280 px
+=======
+
+miniReto Dia 1 Semana 2 - 3
+Layout Flexbox vs Grid
+Portada (header.portada): En este caso use flexbox al no necesitarse de algun tipo de grid para organizar elementos en filas y columnas, es mucho mas simple y efectivo usar flexbox en este caso al funcionar bien en una dimension
+Galería (galeria-flex): Al igual que el anterior solo es necesario una dimension para mostrar los elementos de galeria
+Reservas (reservas-container): En este caso me parecio mas efectivo utilizar el grid-column-template para definir los 2 fr que ocupa el formulario y 1 fr que ocupa el horarios
+Fila del formulario (fila-campos): Aca se uso flexbox para organizar dos campos de datos similares (telefono y documento) en una sola fila, no es necesario usar las dos dimensiones del grid, 
+Encabezado (.barra-superior: Aca usamos Grid para estructurar el menú y el logo en una cuadrícula simétrica de dos columnas. 
+Pie de página: No se ha requerido- Se ira revisando >:)
+>>>>>>> ed11310e0b963472f8f590a2723e03646c6104f3
 
 miniReto 5 Dia 2 Semama 2
 Comparacion Bootstrap 5.3 y mi CSS
