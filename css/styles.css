@@ -232,6 +232,11 @@ main {
     padding: var(--espacio-mediano);
 }
 
+#encuentranos iframe{
+    margin-bottom: var(--espacio-mediano);
+    border-radius: 10px;
+}
+
 /* Tablas */
 
 .tarifas-table {

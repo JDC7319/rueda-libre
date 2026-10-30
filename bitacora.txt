@@ -403,3 +403,6 @@ Luego tuve una falla con las columnas de las tarjetas en flotas y servicios, y c
 
 Adaptado a movil, tablet y pc, 360 px, 768 px y 1280 px
 
+miniReto 5 Dia 2 Semama 2
+Comparacion Bootstrap 5.3 y mi CSS
+En mi CSS le dedique 32 lineas de organizacion a la seccion nuestra flota, mientras que en html solo tuve que conectarme al CDN de Bootstrap y empezar a utilizar sus clases, es mas sencillo a la hora de distrubuir varios elementos ya que tenemos diseños predefinidos por 12 columnas para cada fila,esta seccion en mi CSS me habra tomado 15-20 minutos, mientras que con Bootstrap me demore unos 8-10 minutos, incluso hasta menos ya que tuve que tambien averiguar como usar estas clases para que contenedor, Bootstrap basicamente me facilito la organizacion de estos elementos siguiendo sus "reglas basicas" mientras que pierdo control milimetrico sobre mis elementos, al tener estas clases predefinidas, no me dan cancha para escoger por ej un tamaño que mi proyecto requiere que no este predefinido ya en bootstrap, si estandariza muchas cosas pero a su vez limita lo detallista que puedas llegar a ser.
