@@ -396,3 +396,10 @@ Pruebas con diferentes resoluciones
 900px: La pagina muestra un grid que contiene 2 Columnas
 500px: La pagina muestra un grid que contiene 1 Columna
 
+minireto 4 Dia 1 Semana 2
+Primeramente aca termine estancado despues de hacer los estilos mobile first y despues volver a los estilos que venia usando desde el inicio para aplicarlos desde el tamaño de tablet en adelante, la primera falla fue volviendo a poner el header como estaba, para solucionar esto simplemente use flex ya que me parece mas facil que usar grid por lo menos para el header, me asegure de pocisionarme en la clase que habia creado antes para el header (portada),
+
+Luego tuve una falla con las columnas de las tarjetas en flotas y servicios, y con el desplazamiento de las tablas, aca tuve que recurrir a gemini para revisar como los podria ajustar, para el caso de las columnas utilize un repeat usando autofit para ajustarse automaticamente al tamaño de la pantallaa, suele verse con 1 columna en mobiles y 2 para tablet y 3 o mas en escritorio, para el caso de las tables aprendi a usar el overflow-x: auto; usandolo en las tablas estan son mas legibles desde el movil
+
+Adaptado a movil, tablet y pc, 360 px, 768 px y 1280 px
+

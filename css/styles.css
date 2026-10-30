@@ -1,12 +1,8 @@
-/* Variables */
-
 :root {
     --color-principal: #14213D;
-    
     --color-secundario: #ffffff; 
     --color-texto: #FAF6EF;
-    
-    --botones-enlaces-titulos-encabezados: #F39A2B ; 
+    --botones-enlaces-titulos-encabezados: #F39A2B; 
 
     --fuente-principal: 'Montserrat', Arial, sans-serif;
     --fuente-secundaria: 'Open Sans', Arial, sans-serif;
@@ -14,38 +10,39 @@
     --espacio-pequeno: 0.5rem;
     --espacio-mediano: 1rem;
     --espacio-grande: 2rem;
-    
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
-body{
+body {
+    
     margin: 0;
     font-family: var(--fuente-secundaria);
     color: var(--color-principal);
-    background-color:var(--color-texto);
-    line-height:1.6;
+    background-color: var(--color-texto);
+    line-height: 1.6;
 }
 
 /* Portada y Encabezado Principal */
-header.portada{
+header.portada {
     background-color: var(--color-principal);
     color: var(--color-secundario);
-    min-height: 20dvh;
+    min-height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribuye la barra arriba y el título abajo */
-    padding: var(--espacio-grande) var(--espacio-mediano);
+    justify-content: flex-start;
+    padding: var(--espacio-mediano);
 }
 
 /* Barra superior que contiene el logo y el menú en los extremos */
 .barra-superior {
     width: 100%;
     display: flex;
-    justify-content: space-between; 
-    align-items: center;        
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espacio-mediano);
 }
 
 .barra-superior .logo {
@@ -54,7 +51,6 @@ header.portada{
     font-size: 1.25rem;
     font-weight: 700;
     text-decoration: none;
-    white-space: nowrap; 
     display: flex;
     align-items: center;
     gap: var(--espacio-pequeno);
@@ -62,56 +58,63 @@ header.portada{
 
 .titulo-portada {
     text-align: center;
-    margin: auto 0; 
-    font-size: 2.2rem;
+    margin: var(--espacio-mediano) 0;
+    font-size: 1.8rem;
 }
 
-
-.logo{
-    width: 20%;
+.logo {
+    width: 100%;
+    text-align: center;
 }
 
-.logo img{
-    width: 10%;
+.logo img {
+    width: 40px;
     border-radius: 15px;
 }
 
 /* Titulos */
-h1,h2,h3{
+h1, h2, h3 {
     font-family: var(--fuente-principal);
 }
 
 /* Menu */
-#menu{
-    display: flex;
-    gap: var(--espacio-mediano);
-    flex-wrap: wrap;
-    gap: var(--espacio-pequeno);
+#menu,
+header nav ul, 
+.menu-navegacion {
+    display: flex;    
+    flex-direction: column;  
+    align-items: center;    
+    gap: var(--espacio-pequeno); 
+    list-style: none;      
+    padding: 0;
+    margin: 0;
 }
 
-#menu a{
+#menu a {
     text-decoration: none;
     color: var(--color-secundario);
     font-weight: 500;
 }
 
+
 #menu a.active { 
     color: var(--botones-enlaces-titulos-encabezados); 
-    font-weight: 600; 
+    font-weight: 600;
+    border-bottom: 2px solid var(--botones-enlaces-titulos-encabezados); 
+    border-radius: 2px;
 }
 
 /* Menu Pseudoclases */
-#menu a:hover{
+#menu a:hover {
     color: var(--botones-enlaces-titulos-encabezados);
-    text-decoration: underline;
 }
 
-#menu a:focus{
+#menu a:focus {
     outline: 2px solid var(--botones-enlaces-titulos-encabezados);
     background-color: var(--color-principal);
 }
 
-.btn-cta{
+.btn-cta {
     display: inline-block;
     padding: 12px 24px;
     background-color: var(--botones-enlaces-titulos-encabezados); 
@@ -119,15 +122,16 @@ h1,h2,h3{
     font-weight: 700;
     text-decoration: none;
     border-radius: 4px;
+    margin-bottom: var(--espacio-mediano);
 }
 
 /* Botones de llamada a la acción */
-.btn-cta:hover{
+.btn-cta:hover {
     background-color: var(--color-principal);
     color: var(--color-secundario);
 }
 
-.btn-cta:focus{
+.btn-cta:focus {
     outline: 2px solid var(--botones-enlaces-titulos-encabezados);
     background-color: var(--color-principal);
     color: var(--color-secundario);
@@ -141,12 +145,12 @@ h1,h2,h3{
 
 .flota-container h2 {
     text-align: center;
-    margin: var(--espacio-grande);
+    margin: var(--espacio-grande) 0;
 }
 
 .flota-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
     gap: var(--espacio-grande);
 }
 
@@ -178,44 +182,41 @@ h1,h2,h3{
     color: var(--color-secundario);
 }
 
-
-
-
 /* Inputs Pseudoclases*/
 input:focus, select:focus, textarea:focus {
     outline: none;
     border-color: var(--botones-enlaces-titulos-encabezados);
 }
 
-input[type="radio"]:focus{
+input[type="radio"]:focus {
     outline: 2px solid var(--botones-enlaces-titulos-encabezados);
     accent-color: var(--botones-enlaces-titulos-encabezados);
 }
 
-main{
+main {
     max-width: 75rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* Servicios y Tarjetas */
-#servicios{
+#servicios {
     margin-top: var(--espacio-mediano);
     padding-inline: var(--espacio-mediano);
 }
 
-#servicios h2{
+#servicios h2 {
     text-align: center;
     margin-bottom: var(--espacio-grande);
 }
 
-#servicios .tarjetas-container{
+#servicios .tarjetas-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--espacio-grande);
 }
 
-#servicios article{
+#servicios article {
     padding: var(--espacio-mediano);
     border: 1px solid var(--botones-enlaces-titulos-encabezados);
     border-radius: 8px;
@@ -232,7 +233,19 @@ main{
 }
 
 /* Tablas */
+
+.tarifas-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.rutas-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
 .tarifas-rutas-container, table {
+    
     width: 100%;
     border-collapse: collapse; 
     margin-block: var(--espacio-grande);
@@ -288,7 +301,7 @@ label {
     margin-bottom: var(--espacio-pequeno);
 }
 
-legend{
+legend {
     color: var(--color-principal);
     background-color: var(--color-texto);
     font-weight: 700;
@@ -317,7 +330,7 @@ input[type="submit"],
     font-weight: bold;
 }
 
-button{
+button {
     background-color: var(--botones-enlaces-titulos-encabezados);
     cursor: pointer;
 }
@@ -326,23 +339,10 @@ button:hover {
     background-color: var(--color-secundario);
 }
 
-button:focus{
+button:focus {
     outline: 2px solid var(--botones-enlaces-titulos-encabezados);
     background-color: var(--color-principal);
     color: var(--color-secundario);
-}
-
-/* Menu de Navegación */
-header nav ul, 
-.menu-navegacion {
-    display: flex;    
-    flex-direction: row;  
-    justify-content: center;
-    align-items: center;    
-    gap: var(--espacio-mediano); 
-    list-style: none;      
-    padding: 0;
-    margin: 0;
 }
 
 /* Nueva etiqueta bicicletas electricas */
@@ -370,13 +370,13 @@ header nav ul,
     z-index: 1000;
 }
 
-.whatsapp-flotante:hover{
+.whatsapp-flotante:hover {
     outline: 2px solid var(--botones-enlaces-titulos-encabezados);
     background-color: var(--color-principal);
     color: var(--color-secundario);
 }
 
-footer{
+footer {
     background-color: var(--color-principal);
     font-weight: 500;
     padding: var(--espacio-mediano);
@@ -394,9 +394,88 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
-    justify-content: space-between;
-    
+    flex-direction: column;
     gap: var(--espacio-grande);
+}
+
+/* Media Queries Tablet*/
+@media (min-width: 768px) {
+    header.portada {
+        min-height: 20dvh;
+        padding: var(--espacio-grande);
+    }
+
+    .barra-superior {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .barra-superior .logo {
+        width: auto;
+        text-align: left;
+    }
+
+    #menu,
+    header nav ul, 
+    .menu-navegacion {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: var(--espacio-mediano);
+    }
+
+    .titulo-portada {
+        font-size: 2.2rem;
+        margin: auto 0;
+    }
+
+    .flota-grid,
+    #servicios .tarjetas-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form {
+        max-width: 45rem;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+/* Media Queries Escritorio*/
+@media (min-width: 1200px) {
+    header.portada {
+        min-height: 20dvh;
+    }
+
+    .barra-superior {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu,
+    header nav ul, 
+    .menu-navegacion {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .flota-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #servicios .tarjetas-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    form {
+        max-width: 50rem;
+    }
 }
