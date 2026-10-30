@@ -32,17 +32,28 @@ header.portada {
     min-height: auto;
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     justify-content: flex-start;
     padding: var(--espacio-mediano);
+=======
+    justify-content: space-between; 
+    padding: var(--espacio-grande) var(--espacio-mediano);
+>>>>>>> ed11310e0b963472f8f590a2723e03646c6104f3
 }
 
-/* Barra superior que contiene el logo y el menú en los extremos */
+
 .barra-superior {
     width: 100%;
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: var(--espacio-mediano);
+=======
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;        
+>>>>>>> ed11310e0b963472f8f590a2723e03646c6104f3
 }
 
 .barra-superior .logo {
@@ -99,10 +110,18 @@ header nav ul,
 
 #menu a.active { 
     color: var(--botones-enlaces-titulos-encabezados); 
+<<<<<<< HEAD
     font-weight: 600;
     border-bottom: 2px solid var(--botones-enlaces-titulos-encabezados); 
     border-radius: 2px;
+=======
+    border-bottom-color: var(--botones-enlaces-titulos-encabezados);
+    text-decoration: underline;
+    font-weight: 600; 
+>>>>>>> ed11310e0b963472f8f590a2723e03646c6104f3
 }
+
+
 
 /* Menu Pseudoclases */
 #menu a:hover {
@@ -182,6 +201,40 @@ header nav ul,
     color: var(--color-secundario);
 }
 
+<<<<<<< HEAD
+=======
+/* Galeria Nuestras Rutas */
+.galeria-flex{
+    display: flex;
+    gap: var(--espacio-mediano);
+}
+
+.galeria-flex .tarjeta-destacada{
+    padding: var(--espacio-mediano);
+    border: 1px solid var(--color-principal);
+    border-radius: 8px;
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.galeria-container {
+    margin-top: var(--espacio-mediano);
+    padding-inline: var(--espacio-mediano);
+}
+.galeria-container h2 {
+    text-align: center;
+    margin: var(--espacio-grande);
+}
+
+.galeria-container img {
+    width: 100%;
+}
+
+
+>>>>>>> ed11310e0b963472f8f590a2723e03646c6104f3
 /* Inputs Pseudoclases*/
 input:focus, select:focus, textarea:focus {
     outline: none;
@@ -284,6 +337,21 @@ form {
     padding: var(--espacio-mediano);
 }
 
+
+.fila-campos {
+    display: flex;
+    gap: var(--espacio-mediano);
+    width: 100%;
+    max-width: 500px; 
+}
+
+.grupo-campos {
+    flex: 1;
+    display: flex;
+    
+}
+
+
 fieldset {
     background-color: var(--color-principal);
     color: var(--color-secundario);
@@ -345,6 +413,41 @@ button:focus {
     color: var(--color-secundario);
 }
 
+<<<<<<< HEAD
+=======
+.reservas-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--espacio-mediano);
+}
+
+.form-container {
+    grid-column: span 2;
+    display: flex;
+}
+
+.contact-info {
+    grid-column: span 1;
+}
+
+
+
+
+
+/* Menu de Navegación */
+header nav ul, 
+.menu-navegacion {
+    display: flex;    
+    flex-direction: row;  
+    justify-content: center;
+    align-items: center;    
+    gap: var(--espacio-mediano); 
+    list-style: none;      
+    padding: 0;
+    margin: 0;
+}
+
+>>>>>>> ed11310e0b963472f8f590a2723e03646c6104f3
 /* Nueva etiqueta bicicletas electricas */
 .etiqueta-nuevo {
     background-color: var(--botones-enlaces-titulos-encabezados);
