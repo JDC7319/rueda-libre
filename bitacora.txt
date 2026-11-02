@@ -396,25 +396,48 @@ Pruebas con diferentes resoluciones
 900px: La pagina muestra un grid que contiene 2 Columnas
 500px: La pagina muestra un grid que contiene 1 Columna
 
-<<<<<<< HEAD
 minireto 4 Dia 1 Semana 2
 Primeramente aca termine estancado despues de hacer los estilos mobile first y despues volver a los estilos que venia usando desde el inicio para aplicarlos desde el tamaño de tablet en adelante, la primera falla fue volviendo a poner el header como estaba, para solucionar esto simplemente use flex ya que me parece mas facil que usar grid por lo menos para el header, me asegure de pocisionarme en la clase que habia creado antes para el header (portada),
 
 Luego tuve una falla con las columnas de las tarjetas en flotas y servicios, y con el desplazamiento de las tablas, aca tuve que recurrir a gemini para revisar como los podria ajustar, para el caso de las columnas utilize un repeat usando autofit para ajustarse automaticamente al tamaño de la pantallaa, suele verse con 1 columna en mobiles y 2 para tablet y 3 o mas en escritorio, para el caso de las tables aprendi a usar el overflow-x: auto; usandolo en las tablas estan son mas legibles desde el movil
 
 Adaptado a movil, tablet y pc, 360 px, 768 px y 1280 px
-=======
 
-miniReto Dia 1 Semana 2 - 3
-Layout Flexbox vs Grid
-Portada (header.portada): En este caso use flexbox al no necesitarse de algun tipo de grid para organizar elementos en filas y columnas, es mucho mas simple y efectivo usar flexbox en este caso al funcionar bien en una dimension
-Galería (galeria-flex): Al igual que el anterior solo es necesario una dimension para mostrar los elementos de galeria
-Reservas (reservas-container): En este caso me parecio mas efectivo utilizar el grid-column-template para definir los 2 fr que ocupa el formulario y 1 fr que ocupa el horarios
-Fila del formulario (fila-campos): Aca se uso flexbox para organizar dos campos de datos similares (telefono y documento) en una sola fila, no es necesario usar las dos dimensiones del grid, 
-Encabezado (.barra-superior: Aca usamos Grid para estructurar el menú y el logo en una cuadrícula simétrica de dos columnas. 
-Pie de página: No se ha requerido- Se ira revisando >:)
->>>>>>> ed11310e0b963472f8f590a2723e03646c6104f3
+miniReto 5 Dia 2 Semana 2
 
-miniReto 5 Dia 2 Semama 2
+Ire colocando los ejemplos de los que me he basado para ir acomodando mi pagina
+
+ - Esto ayuda a entender su comportamiento
+col-12	12 / 12 = todo el ancho	1 por fila
+col-6	6 / 12 = la mitad	2 por fila
+col-4	4 / 12 = un tercio	3 por fila
+col-3	3 / 12 = un cuarto	4 por fila
+
+- mediasquerie / breakpoints
+Sin prefijo	0 px	col-12
+sm(small)	576 px	col-sm-6
+md(medium)	768 px	col-md-6
+lg(large)	992 px	col-lg-4
+xl(extralarge)	1200 px	col-xl-3
+xxl(extra extra large)	1400 px	col-xxl-2
+
 Comparacion Bootstrap 5.3 y mi CSS
-En mi CSS le dedique 32 lineas de organizacion a la seccion nuestra flota, mientras que en html solo tuve que conectarme al CDN de Bootstrap y empezar a utilizar sus clases, es mas sencillo a la hora de distrubuir varios elementos ya que tenemos diseños predefinidos por 12 columnas para cada fila,esta seccion en mi CSS me habra tomado 15-20 minutos, mientras que con Bootstrap me demore unos 8-10 minutos, incluso hasta menos ya que tuve que tambien averiguar como usar estas clases para que contenedor, Bootstrap basicamente me facilito la organizacion de estos elementos siguiendo sus "reglas basicas" mientras que pierdo control milimetrico sobre mis elementos, al tener estas clases predefinidas, no me dan cancha para escoger por ej un tamaño que mi proyecto requiere que no este predefinido ya en bootstrap, si estandariza muchas cosas pero a su vez limita lo detallista que puedas llegar a ser.
+En mi CSS le dedique 32 lineas de organizacion a la seccion del catalogo con sus 7 elementos, mientras que en html solo tuve que conectarme al CDN de Bootstrap y empezar a utilizar sus clases, es mas sencillo a la hora de distribuir varios elementos ya que tenemos diseños predefinidos por 12 columnas para cada fila,esta seccion en mi CSS me habra tomado 15-20 minutos, mientras que con Bootstrap me demore unos 8-10 minutos, incluso hasta menos ya que tuve que tambien averiguar como usar estas clases y con que contenedor utilizarlas; Bootstrap basicamente me facilito la organizacion de estos elementos siguiendo sus "reglas basicas", por el otro lado, pierdo control milimetrico sobre mis elementos, al tener estas clases predefinidas, no me dan cancha o libertad para escoger por EJ un tamaño que mi proyecto requiere que no este predefinido ya en bootstrap, si estandariza muchas cosas pero a su vez limita lo detallista que puedas llegar a ser.
+
+miniReto 6 Dia 2 Semana 2 11/1/2026
+Con fin de agregar estilos sin todavia usar css me encuentro usando de las clases que ya vienen con Bootstrap, 
+- !Sirve diferenciar lo que se va a hacer por medio de sus siglas!
+m / p	margin-margen / padding-espaciado
+t / b	top-arriba / bottom-abajo
+s / e	start-inicio / end-final de la dirección de escritura
+x / y	x axis - eje x ambos lados horizontales / y axis - eje y verticales
+
+
+
+
+h-100 Hace que el articulo ocupe todo el alto de su columna
+d-flex flex-column organiza el contenido verticalmente;
+mt-auto usa el espacio sobrante para empujar el enlace al final align-self-start evita que ese enlace ocupe todo el ancho.
+
+
+miniReto 
