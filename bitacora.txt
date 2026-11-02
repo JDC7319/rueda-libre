@@ -440,4 +440,17 @@ d-flex flex-column organiza el contenido verticalmente;
 mt-auto usa el espacio sobrante para empujar el enlace al final align-self-start evita que ese enlace ocupe todo el ancho.
 
 
-miniReto 
+5 Clases que use en este reto fueron
+
+class="col-12 col-sm-6 col-lg-4 col-xl-3 " Aca tengo el responsive, aca defino que en celular osea sin poner algun tamaño para el breakdown me ocupe 12 de las columnas disponibles (celular)
+que a partir de small(sm) cada uno me ocupe 6 de ellas, no haga nada en medium por lo que sigue agarrando 6 hasta lg donde agarra 4, y extra large que agarra 3, ya se uso antes y es bastante simple
+
+border : Basicamente le agrega un borde xd
+
+rounded : Esto seria nuestro "border-radius" recordar que usamos una escala de 0-5, siendo 5 3rem
+
+shadow : Sombra del contenedor, en este caso utilizamos las medidas sm,md,lg, etc.
+
+d-flex flex-*: d as display, me permite usar flexbox en mis contenedores y definir si va a ser fila o columna / rows or columns
+
+bg : background jaja, el fondo del contenedor, en mi caso utilice bg-* y tambien bg-warning para darle un estilo al boton de consultar opciones
