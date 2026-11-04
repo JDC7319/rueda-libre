@@ -492,7 +492,16 @@ Conflicto 3: La config para que tome en cuenta los bordes y el tamaño sea siemp
 
  Ya Bootstrap la utilazaba por defecto entonces pude remover la mia 
 
+minireto8 Dia 2 Semana 2 03-11-2026
+Despues de limpiar lo que no usaba en css, me habre ahorrado unas 60-80 lineas, quizas mas, en html solo tuve que anadir las clases de bootstrap y manejar su organizacion, mientras lo iba aprendiendo si senti cierta demora cogiendo los conceptos pero al ir finalizando con reservas y tarifas si se nota el cambio si lo comparo a cuando hice esas secciones en mi hoja de estilos.
 
+Le habre invertido entonces un tiempo similar incluso mayor usando bootstrap, en este caso mientras comprendia el framework y lo aplica, con su continuo uso, el tiempo deberia verse mejorado en buena medida haciendo uso del framework
+
+Como ventajas de usarlo, tengo mayor consistencia, codigo html mas limpio, y su adaptacion a tamaños de pantalla que si fue en lo que se nota mas su uso
+
+Como desventajas, seria que su sistema es algo "rigido" y no te deja ser tan flexible como aveces quisieras.
+
+Me parece una buena opcion si el enfoque es tener un esqueleto bien construido manteniendo la identidad visual de la marca, mientras no tengamos en mente hacer locuras en el front o cosas que necesiten de mucho ajuste con bootstrap, me parece un buen framework a usar.
 
 
 

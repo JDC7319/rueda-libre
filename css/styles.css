@@ -23,7 +23,10 @@ body {
 
 /* Portada y Encabezado Principal */
 
-
+header {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+}
 
 
 
@@ -34,17 +37,15 @@ h1, h2, h3 {
 }
 
 /* Menu */
-#menu,
-header nav ul, 
-.menu-navegacion {
-    display: flex;    
-    flex-direction: column;  
-    align-items: center;    
-    gap: var(--espacio-pequeno); 
-    list-style: none;      
-    padding: 0;
-    margin: 0;
+
+.tarjetas-form {
+    border: 1px solid var(--botones-enlaces-titulos-encabezados);
+    padding: var(--espacio-mediano);
+    border-radius: 8px;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
 }
+
 
 #menu a {
     text-decoration: none;
@@ -140,15 +141,7 @@ main {
 
 /* Tablas */
 
-.tarifas-table {
-    width: 100%;
-    overflow-x: auto;
-}
 
-.rutas-table {
-    width: 100%;
-    overflow-x: auto;
-}
 
 .tarifas-rutas-container, table {
     
@@ -158,6 +151,7 @@ main {
     font-size: 1rem;
     text-align: left;
 }
+
 
 th {
     background-color: var(--color-principal); 
@@ -191,36 +185,7 @@ form {
 }
 
 
-.fila-campos {
-    display: flex;
-    gap: var(--espacio-mediano);
-    width: 100%;
-    max-width: 500px; 
-}
 
-.grupo-campos {
-    flex: 1;
-    display: flex;
-    
-}
-
-
-fieldset {
-    background-color: var(--color-principal);
-    color: var(--color-secundario);
-    display: flex;
-    flex-direction: column;
-    gap: var(--espacio-pequeno);
-    border: 1px solid var(--botones-enlaces-titulos-encabezados);
-    border-radius: 8px;
-    padding: var(--espacio-mediano);
-}
-
-label {
-    display: block; 
-    font-weight: 600;
-    margin-bottom: var(--espacio-pequeno);
-}
 
 legend {
     color: var(--color-principal);
